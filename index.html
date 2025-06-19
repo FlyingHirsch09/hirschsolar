@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hirsch Solar – Balkonkraftwerke aus Knittlingen</title>
+  <style>
+    :root {
+      --primary: #007aff;
+      --text-dark: #1c1c1e;
+      --text-light: #f2f2f7;
+      --background: #ffffff;
+      --border: #d1d1d6;
+    }
+    * { box-sizing: border-box; transition: all 0.3s ease; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      background-color: var(--background);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+    header, footer {
+      background: var(--text-dark);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 500;
+      display: inline-block;
+    }
+    nav a:hover {
+      transform: scale(1.1);
+    }
+    .hero {
+      padding: 4rem 1rem;
+      text-align: center;
+      background-color: var(--text-light);
+    }
+    .hero img {
+      width: 100px;
+      margin-bottom: 1rem;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    section {
+      padding: 3rem 1rem;
+      max-width: 960px;
+      margin: auto;
+    }
+    h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+    .leistungen ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+    }
+    .leistungen li {
+      padding: 0.75rem;
+      font-size: 1.1rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .galerie {
+      text-align: center;
+    }
+    .galerie img {
+      border-radius: 12px;
+      margin: 1rem;
+      width: 90%;
+      max-width: 300px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .galerie img:hover {
+      transform: scale(1.05);
+    }
+    .kontaktformular {
+      max-width: 600px;
+      margin: auto;
+    }
+    .kontaktformular input,
+    .kontaktformular textarea {
+      width: 100%;
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      font-size: 1rem;
+    }
+    .kontaktformular button {
+      padding: 1rem 2rem;
+      background: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 12px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+    .kontaktformular button:hover {
+      transform: scale(1.05);
+      background: #005ecb;
+    }
+    footer p {
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: #aaa;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Hirsch Solar Logo" style="width:80px;" />
+    <h1>Hirsch Solar</h1>
+    <nav>
+      <a href="#leistungen">Leistungen</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <img src="logo-schriftzug.png" alt="Hirsch Solar Logo mit Schriftzug" />
+    <h2>Balkonkraftwerke für Knittlingen & Bretten</h2>
+    <p>Beratung, Lieferung und Montage mit Stil – direkt vom Fachmann</p>
+  </div>
+
+  <section id="leistungen" class="leistungen">
+    <h3>Unsere Leistungen</h3>
+    <ul>
+      <li>✅ Persönliche Beratung vor Ort oder telefonisch</li>
+      <li>✅ Lieferung steckerfertiger Balkonkraftwerk-Sets</li>
+      <li>✅ Fachgerechte Montage an Balkon, Fassade oder Boden</li>
+      <li>✅ Unterstützung bei Anmeldung & Inbetriebnahme</li>
+    </ul>
+  </section>
+
+  <section id="galerie" class="galerie">
+    <h3>Beispiel-Installationen (Platzhalter)</h3>
+    <img src="https://via.placeholder.com/300x200?text=Balkon" alt="Beispiel Balkon" />
+    <img src="https://via.placeholder.com/300x200?text=Dach" alt="Beispiel Dachmontage" />
+    <img src="https://via.placeholder.com/300x200?text=Wand" alt="Beispiel Wandmontage" />
+  </section>
+
+  <section id="kontakt">
+    <h3>Kontakt</h3>
+    <p style="text-align:center">
+      📞 0176/34512166<br />
+      📧 <a href="mailto:hirsch-solar@gmail.com">hirsch-solar@gmail.com</a>
+    </p>
+    <form class="kontaktformular" name="kontakt" method="POST" data-netlify="true">
+      <input type="text" name="name" placeholder="Ihr Name" required />
+      <input type="email" name="email" placeholder="Ihre E-Mail" required />
+      <textarea name="nachricht" placeholder="Ihre Nachricht" rows="5" required></textarea>
+      <button type="submit">Nachricht senden</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Hirsch Solar – Region Knittlingen & Bretten | <a href="#">Impressum</a> | <a href="#">Datenschutz</a></p>
+  </footer>
+</body>
+</html>
